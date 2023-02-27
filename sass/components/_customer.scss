@@ -1,6 +1,6 @@
 // Variables
 @import '../utils/variables';
-
+@import '../utils/mixins';
 // customers
 .customers {
     &__title {
@@ -19,7 +19,6 @@
         gap: 27px;
     }
 }
-
 .customers__list__icon {
     transition-property: border-color, border-radius, color, fill, border;
     transition-duration: 250ms;
@@ -30,18 +29,18 @@
     &:focus {
         border-radius: 4px;
         fill: $secondary-color;
-        border: 1px solid $secondary-color;
+        @include border__primary($secondary-color);
         outline: none;
         text-decoration: none;
     }
     &:hover {
         fill: $secondary-color;
         border-radius: 4px;
-        border: 1px solid $secondary-color;
+        @include border__primary($secondary-color);
     }
 }
 .customers__links__icons--size {
-    border: 1px solid $septenary-color;
+    @include border__primary($septenary-color);
     border-radius: 4px;
     display: flex;
     padding: 14px 32px;
@@ -52,12 +51,12 @@
     &:target {
         fill: $secondary-color;
         border-radius: 4px;
-        border: 1px solid $secondary-color;
+        @include border__primary($secondary-color);
     }
     &:focus {
         border-radius: 4px;
         fill: $secondary-color;
-        border: 1px solid $secondary-color;
+        @include border__primary($secondary-color);
         outline: none;
         text-decoration: none;
     }

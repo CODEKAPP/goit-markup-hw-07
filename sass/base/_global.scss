@@ -1,5 +1,6 @@
 @import '../utils/variables';
 *,
+// Styles global
 ::before,
 ::after {
     box-sizing: border-box;
@@ -28,4 +29,21 @@ p {
 }
 .button--property {
     cursor: pointer;
+}
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 55.5px;
+}
+// icons section characteristics
+.icons__div {
+    height: 120px;
+    background-color: $background-color-quaternary;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
